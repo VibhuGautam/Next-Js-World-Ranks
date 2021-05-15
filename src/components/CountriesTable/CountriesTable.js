@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core'
 import styles from './CountriesTable.module.css'
 
 const CountriesTable = ({countries}) => {
@@ -15,10 +16,15 @@ const CountriesTable = ({countries}) => {
                         Name
                     </div>
                 </Button>
-                
-               
-
             </div>
+
+            { countries.map((country) => (
+                <div className = {styles.row}>
+                    <div className = {styles.name}>{country.name}</div>
+
+                    <div className ={styles.population}>{country.population}</div>
+                </div> 
+            ))} 
         </div>
     )
 }
