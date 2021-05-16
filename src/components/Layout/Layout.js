@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Link from "nnext/link"
+import Link from "next/link"
 import { useEffect } from "react"
 import styles from "./Layout.module.css"
 
