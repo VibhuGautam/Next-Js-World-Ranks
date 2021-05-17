@@ -22,10 +22,10 @@ const Layout = ({children, title = "World Ranks"}) => {
     }
 
     const saveTheme = (theme) => {
-        setTheme(theme)
-        document.documentElement.
-        setAttribute('data-theme', theme)
-    }
+        setTheme(theme);
+        localStorage.setItem("theme", theme);
+        document.documentElement.setAttribute("data-theme", theme);
+    };
 
     return (
         <div className = {styles.container}>
