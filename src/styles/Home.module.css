@@ -1,7 +1,4 @@
-.counts{
-    margin: 12px 0;
-    color: var(--text-color-secondary);
-}
+
 .inputContainer{
     margin-bottom: 40px;
 }
@@ -11,9 +8,7 @@
         display: flex;
         justify-content: space-between;        
     }
-    .counts{
-        flex: 1;
-    }
+  
     .input{
         flex: 2;
     }
